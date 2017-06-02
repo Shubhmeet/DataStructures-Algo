@@ -1,3 +1,4 @@
+package trees;
 
 public class diffLeftnRightTree {
 // find the diff b/w left and right node at every node and calculate the total sum like
@@ -9,7 +10,23 @@ public class diffLeftnRightTree {
 		 *     TreeNode(int x) { val = x; }
 		 * }
 		 */
-	
+	/*
+	 * int result=0;
+    public int findTilt(TreeNode root) {
+        postOrder(root);
+        return result;
+    }
+    
+    public int postOrder(TreeNode root){
+        if(root==null)
+            return 0;
+        int left= postOrder(root.left);
+        int right =postOrder(root.right);
+        
+        result+=Math.abs(left-right);
+        return left+ right +root.val;
+    }
+	 */
 	
 	public int findTilt(TreeNode root) {
        if(root==null) return 0;
